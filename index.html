@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Service Provider — Intelligent Automation & ML</title>
+    <meta
+      name="description"
+      content="AI service provider empowering organizations with ML, NLP, and automation solutions for better decisions and streamlined workflows."
+    />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="preload"
+      href="style.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="style.css" /></noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <div class="brand">
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#6C63FF" />
+                <stop offset="1" stop-color="#00C2FF" />
+              </linearGradient>
+            </defs>
+            <circle cx="12" cy="12" r="10" fill="url(#g1)" />
+            <path d="M8 12a4 4 0 0 1 8 0" fill="#fff" opacity="0.15" />
+          </svg>
+          <span class="brand-text">AIVault</span>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#use-cases">Use cases</a></li>
+            <li><a href="#trust">Clients</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn-outline" href="#pricing">Pricing</a>
+          <button class="btn btn-primary" id="demoBtn">Schedule a Demo</button>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-expanded="false"
+            aria-label="Open menu"
+          >
+            <span aria-hidden="true"></span><span aria-hidden="true"></span
+            ><span aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#use-cases">Use cases</a></li>
+          <li><a href="#trust">Clients</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li>
+            <a href="#contact" class="btn btn-primary">Schedule a Demo</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero" aria-labelledby="hero-heading">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1 id="hero-heading">
+              Turn data into decisions with intelligent automation
+            </h1>
+            <p class="lead">
+              Enterprise-grade machine learning, NLP, and automation platform
+              that integrates with your stack and delivers measurable ROI.
+              Secure, scalable, and fast to deploy.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" id="heroDemoBtn">
+                Schedule a Demo
+              </button>
+              <a href="#features" class="btn btn-ghost">Explore features</a>
+            </div>
+
+            <ul class="trust-row" aria-label="Trusted by">
+              <li>
+                <picture>
+                  <source srcset="./assests/f.jpeg.jpg" type="f/jpeg" />
+                  <img
+                    src="./assests/f.jpeg.jpg"
+                    alt="FinCorp logo"
+                    aria-hidden="true"
+                  />
+                </picture>
+                <span>FinCorp</span>
+              </li>
+              <li>
+                <picture>
+                  <source srcset="./assests/health.png" type="health/jpeg" />
+                  <img
+                    src="./assests/health.png"
+                    alt="HealthSync logo"
+                    aria-hidden="true"
+                  />
+                </picture>
+                <span>HealthSync</span>
+              </li>
+              <li>
+                <picture>
+                  <source srcset="./assests/A.jpeg.jpg" type="A/jpeg" />
+                  <img
+                    src="./assests/A.jpeg.jpg"
+                    alt="RetailWorks logo"
+                    aria-hidden="true"
+                  />
+                </picture>
+                <span>RetailWorks</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-card">
+              <svg
+                viewBox="0 0 600 400"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                aria-label="AI illustration"
+              >
+                <defs>
+                  <linearGradient id="vg" x1="0" x2="1">
+                    <stop offset="0" stop-color="#6C63FF" />
+                    <stop offset="1" stop-color="#00C2FF" />
+                  </linearGradient>
+                </defs>
+                <rect
+                  width="600"
+                  height="400"
+                  rx="20"
+                  fill="url(#vg)"
+                  opacity="0.12"
+                />
+                <g transform="translate(40,30)">
+                  <rect
+                    x="0"
+                    y="40"
+                    width="220"
+                    height="120"
+                    rx="12"
+                    fill="#fff"
+                    opacity="0.9"
+                  />
+                  <circle
+                    cx="150"
+                    cy="80"
+                    r="30"
+                    fill="#6C63FF"
+                    opacity="0.9"
+                  />
+                  <rect
+                    x="260"
+                    y="20"
+                    width="220"
+                    height="240"
+                    rx="12"
+                    fill="#fff"
+                    opacity="0.95"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features" aria-labelledby="features-heading">
+        <div class="container">
+          <h2 id="features-heading">Capabilities that accelerate outcomes</h2>
+          <p class="section-sub">
+            From prototype to production — prebuilt models, easy integrations,
+            and automation pipelines.
+          </p>
+
+          <div class="features-grid" role="list">
+            <article class="feature-card" role="listitem">
+              <div class="icon" aria-hidden="true">🤖</div>
+              <h2>ML & Model Ops</h2>
+              <p>
+                End-to-end model lifecycle: train, deploy, monitor, and version
+                with automated retraining pipelines.
+              </p>
+            </article>
+            <article class="feature-card" role="listitem">
+              <div class="icon" aria-hidden="true">💬</div>
+              <h2>NLP & Conversational AI</h2>
+              <p>
+                Advanced text understanding, semantic search, and intelligent
+                chatbots tailored to your domain.
+              </p>
+            </article>
+            <article class="feature-card" role="listitem">
+              <div class="icon" aria-hidden="true">⚙</div>
+              <h2>Automation & Workflows</h2>
+              <p>
+                Automate repetitive tasks and orchestrate cross-system workflows
+                with low-code pipelines.
+              </p>
+            </article>
+            <article class="feature-card" role="listitem">
+              <div class="icon" aria-hidden="true">🔒</div>
+              <h2>Security & Compliance</h2>
+              <p>
+                Enterprise security controls, role-based access, and audit
+                trails to meet compliance needs.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section alt"
+        id="use-cases"
+        aria-labelledby="usecases-heading"
+      >
+        <div class="container">
+          <h2 id="usecases-heading">Real-world solutions</h2>
+          <p class="section-sub">
+            Solutions tailored for industries that demand speed and accuracy.
+          </p>
+
+          <div
+            class="carousel"
+            id="usecaseCarousel"
+            aria-roledescription="carousel"
+          >
+            <button
+              class="carousel-btn prev"
+              aria-label="Previous use case slide"
+              data-dir="-1"
+            >
+              ‹
+            </button>
+            <div class="carousel-track" role="list">
+              <article
+                class="usecase-card"
+                role="listitem"
+                aria-label="Finance use case"
+              >
+                <h2>Finance — Fraud detection pipeline</h2>
+                <p>
+                  Real-time scoring and alerts, model explainability, and
+                  integration with existing AML tools.
+                </p>
+              </article>
+              <article
+                class="usecase-card"
+                role="listitem"
+                aria-label="Healthcare use case"
+              >
+                <h2>Healthcare — Clinical insights</h2>
+                <p>
+                  Extract insights from clinical notes, accelerate coding, and
+                  automate operational workflows securely.
+                </p>
+              </article>
+              <article
+                class="usecase-card"
+                role="listitem"
+                aria-label="Retail use case"
+              >
+                <h2>Retail — Personalized recommendations</h2>
+                <p>
+                  Real-time personalization across channels to increase
+                  conversion and lifetime value.
+                </p>
+              </article>
+            </div>
+            <button
+              class="carousel-btn next"
+              aria-label="Next use case slide"
+              data-dir="1"
+            >
+              ›
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="trust" aria-labelledby="trust-heading">
+        <div class="container">
+          <h2 id="trust-heading">Trusted by teams across industries</h2>
+
+          <div class="testimonials">
+            <blockquote>
+              <p>
+                “AIVault reduced our fraud false positives by 37% and shortened
+                investigation time from days to hours.”
+              </p>
+              <footer>— Priya Menon, Head of Risk, FinCorp</footer>
+            </blockquote>
+            <blockquote>
+              <p>
+                “The onboarding was fast and secure — we were generating
+                production predictions in under 10 days.”
+              </p>
+              <footer>— Daniel Kim, CTO, HealthSync</footer>
+            </blockquote>
+          </div>
+
+          <div class="partner-logos" aria-hidden="true">
+            <span class="logo">FinCorp</span>
+            <span class="logo">HealthSync</span>
+            <span class="logo">RetailWorks</span>
+            <span class="logo">CloudOps</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section alt"
+        id="pricing"
+        aria-labelledby="pricing-heading"
+      >
+        <div class="container">
+          <h2 id="pricing-heading">Simple pricing for teams of any size</h2>
+          <p class="section-sub">
+            Predictable plans. Custom enterprise solutions available — contact
+            sales.
+          </p>
+
+          <div class="pricing-grid" role="list">
+            <div class="plan" role="listitem" aria-label="Starter plan">
+              <h3>Starter</h3>
+              <p class="price">Free</p>
+              <ul>
+                <li>Basic models & API access</li>
+                <li>Community support</li>
+              </ul>
+              <button class="btn btn-outline" aria-label="Get Starter">
+                Start free
+              </button>
+            </div>
+            <div class="plan recommended" role="listitem" aria-label="Pro plan">
+              <div class="ribbon">Popular</div>
+              <h3>Pro</h3>
+              <p class="price">₹9,999 / mo (INR)</p>
+              <ul>
+                <li>Advanced models & pipelines</li>
+                <li>SLA & email support</li>
+                <li>Single-tenant option</li>
+              </ul>
+              <button class="btn btn-primary" aria-label="Get Pro">
+                Get started
+              </button>
+            </div>
+            <div class="plan" role="listitem" aria-label="Enterprise plan">
+              <h3>Enterprise</h3>
+              <p class="price">Custom</p>
+              <ul>
+                <li>Custom integrations</li>
+                <li>Dedicated support & onboarding</li>
+                <li>Security & compliance</li>
+              </ul>
+              <a
+                class="btn btn-ghost"
+                href="#contact"
+                aria-label="Contact sales"
+                >Contact sales</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-heading">
+        <div class="container contact-grid">
+          <div>
+            <h2 id="contact-heading">Request a demo</h2>
+            <p>
+              Tell us a bit about your needs and we'll schedule a personalized
+              walkthrough.
+            </p>
+            <ul class="contact-points">
+              <li>
+                <strong>Typical response:</strong> <span>1 business day</span>
+              </li>
+              <li>
+                <strong>Deployment:</strong> <span>Cloud or on-prem</span>
+              </li>
+              <li>
+                <strong>Security:</strong>
+                <span>Enterprise-grade controls</span>
+              </li>
+            </ul>
+          </div>
+
+          <form
+            id="demoForm"
+            class="demo-form"
+            aria-label="Request demo form"
+            action="/submit-demo"
+            method="POST"
+          >
+            <label for="name">Full name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              minlength="2"
+              placeholder="Your name"
+            />
+
+            <label for="email">Work email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="you@company.com"
+            />
+
+            <label for="company">Company</label>
+            <input
+              id="company"
+              name="company"
+              type="text"
+              required
+              placeholder="Company name"
+            />
+
+            <label for="role">Role</label>
+            <select id="role" name="role" required>
+              <option value="">Select role</option>
+              <option>CTO / Technical Lead</option>
+              <option>Business Manager</option>
+              <option>Data Scientist</option>
+              <option>Other</option>
+            </select>
+
+            <label for="message">Short description of needs (optional)</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Tell us what you're trying to solve"
+              aria-describedby="message-hint"
+            ></textarea>
+            <p id="message-hint" class="muted">Max 500 characters.</p>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">
+                Request demo
+              </button>
+              <button type="button" class="btn btn-ghost" id="clearBtn">
+                Clear
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div>
+          <strong>AIVault</strong>
+          <p class="muted">AI service provider • ML, NLP & automation</p>
+          <p class="muted">
+            © <span id="year">2025</span> AIVault — All rights reserved.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="/about">About</a>
+          <a href="/docs">Docs</a>
+          <a href="/careers">Careers</a>
+          <a href="/contact">Contact</a>
+        </div>
+
+        <div class="social">
+          <a href="https://twitter.com/aivault" aria-label="Twitter">Twitter</a>
+          <a href="https://linkedin.com/company/aivault" aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal"
+      id="thankYouModal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="modal-panel" role="document">
+        <button class="modal-close" id="modalClose" aria-label="Close">
+          ×
+        </button>
+        <h3>Thanks — we received your request!</h3>
+        <p>
+          Someone from our team will reach out within 1 business day to schedule
+          your demo.
+        </p>
+        <button class="btn btn-primary" id="modalOk">Close</button>
+      </div>
+    </div>
+
+    <script src="Ai.js" defer></script>
+  </body>
+</html>
